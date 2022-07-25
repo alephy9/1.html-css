@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 16</title>
+</head>
+<body>
+        <h1>Modelo de caixa</h1>
+
+        <h2>O que é uma caixa?</h2>
+        <p>
+        De forma simples e objetiva, baseado em um conceito chamado 
+        <strong><q>box model</q></strong>, a grande maioria dos elementos HTML que 
+        temos no nosso site são como caixas.
+        <br> Elas são containers
+        que armazenam conteúdos ou até mesmo outras caixas.
+        </p>
+
+        <h3>Anatomia de uma caixa</h3>
+        <p>
+        Tudo começa pelo conteúdo que fica no núcleo da caixa, logo após vem a <strong>border (borda do conteúdo)</strong>, logo em seguida temos padding (distância do conteúdo pra borda), <strong>
+        margin
+        (margem distância da borda pra fora)
+        </strong> e o <strong>outline (traçado visual que fica dentro de margin).</strong>
+        </p>
+
+        <h3>Shorthands (border + outline)</h3>
+        <p>
+        As configurações de borda e contorno também possuem shorthands para simplificar o 
+        código anterior.
+        <br> A ordem para as duas configurações é sempre a mesma para as duas 
+        <strong>shorthands: largura (-width), estilo (-style) e cor (-color).</strong>
+        </p>
+        <p>
+        <ul>
+        <li><strong>border: 10px solid [] white;</strong></li>
+        <ul>
+        <li>border-width: 10px;</li>
+        <li>border-style: solid;</li>
+        <li>border-color: [] white;</li>
+        </ul>
+        <br>
+        <li><strong>outline: 30px solid [] black;</strong></li>
+        <ul>
+        <li>outline-width: 30px;</li>
+        <li>outline-style: solid;</li>
+        <li>outline-color: [] black;</li>
+        </ul>
+
+        </ul>
+        </p>
+
+        <h3>Shorthands (padding + margin)</h3>
+        <p>
+        Todo elemento de caixa possui quatro valores para padding e quatro para margin, 
+        sempre nessa mesma ordem: superior (-top), direita (-right), inferior (-bottom), 
+        esquerda (-left)... sempre em sentido horário &#x1F559;
+        </p>
+        <p>
+        <ul>
+        <li><strong>padding: 10px 20px 30px 40px;</strong></li>
+        <ul>
+        <li>padding-top: 10px;</li>
+        <li>padding-right: 20px;</li>
+        <li>padding-bottom: 30px;</li>
+        <li>padding-left: 40px;</li>
+        </ul>
+        <li><strong>margin: 10px 20px 30px 40px;</strong></li>
+        <ul>
+        <li>margin-top: 10px;</li>
+        <li>margin-right: 20px;</li>
+        <li>margin-bottom: 30px;</li>
+        <li>margin-left: 40px;</li>
+        </ul>
+        </ul>
+        </p>
+        <p>
+        Observação<sup>1</sup>: Quando colocamos um único valor de dimensão para o 
+        padding ou margem, esse mesmo valor é aplicado simetricamente a todas as 
+        direções, mas também podemos fazer códigos como:
+        <br><strong>padding: 10px; = (top+right+bottom+left)</strong>
+        </p>
+        <p>
+        Observação<sup>2</sup>: Também existe a opção de indicar cada shorthand das propriedades de preenchimento 
+        e borda usando apenas duas medidas:
+        <br><strong>padding: 10px 20px; (top+bottom 10px) (right+left 20px)</strong>
+        <br> Essa simplificação só é possível quando as medidas -top e -bottom forem iguais entre 
+        si e o mesmo também ocorrer entre as medidas -right e -left.
+        </p>
+
+        <h3>Margens no automático</h3>
+        <p>
+        Um recurso que também vai ser muito usado em nossos exercícios 
+        é a centralização de blocos.
+        <br> Para que isso seja feito, devemos 
+        pedir que o navegador calcule automaticamente as margens da 
+        esquerda e da direita para que o bloco seja colocado no meio do 
+        navegador, independente do tamanho da janela.
+        <br> Para centralizar uma caixa, use a seguinte declaração no seu 
+        seletor: <strong>margin: auto;</strong>
+        </p>
+
+        <h2>Tipos de Caixa</h2>
+
+        <h3>Block-level</h3>
+        <p>
+            Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a 
+            largura total do elemento onde ele está contido. Se não estiver contido em nenhuma 
+            outra caixa, ele vai ocupar 100% da largura do &lt;body&gt;.
+            <br> O elemento block-level mais conhecido é o &lt;div&gt; e suas variações semânticas 
+            modernas da HTML5, como &lt;main&gt;, &lt;section&gt;, &lt;aside&gt;, etc.
+        </p>
+        <p>
+            Alguns exemplos de tags que são block-level 
+            <br> (address, article, aside, blockquote, canvas,
+                div, dl, dd-dt, fieldset, figcaption, figure,
+                footer, form, h1-h6, header, hr, li,
+                main, nav, noscript, ol, p, pre,
+                section, table, tfoot, ul, video)
+        </p>
+
+        <h3>inline-level</h3>
+        <p>
+            Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto 
+exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao 
+seu conteúdo.
+Abaixo, listei alguns elementos inline-level usados pela HTML:
+        </p>
+        <p>
+            Alguns exemplos de tags que são ineline-level 
+            <br> (a, abbr, acronym, b, bdo, br, button, cite, code, dfn, em , i, img , input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, textarea, tt, var)
+        </p>
+
+        <h2>Grouping tags e Semantic tags</h2>
+
+        <h3>header</h3>
+        <p>
+        Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
+        mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos &lt;h1&gt; - &lt;h6&gt;
+        e subtítulos. Podem também conter menus de navegação
+        </p>
+
+        <h3>nav</h3>
+        <p>
+        Define uma área que possui os links de navegação pela 
+        estrutura de páginas que vão compor o website. Um 
+        &lt;nav&gt; pode estar dentro de um &lt;header&gt;.
+        </p>
+
+        <h3>main</h3>
+        <p> 
+        É um agrupador usado para delimitar o conteúdo 
+        principal do nosso site. Normalmente concentra as 
+        seções, artigos e conteúdos periféricos.
+        </p>
+
+        <h3>section</h3>
+        <p> 
+        Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou 
+        dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação 
+        oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente 
+        com um cabeçalho”.
+        </p>
+
+        <h3>article</h3>
+        <p> 
+        Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma 
+        independente e dizem respeito a um mesmo assunto. Podemos usar um &lt;article&gt; 
+        para delimitar um post de blog ou fórum, uma notícia, etc.
+        </p>
+
+        <h3>fside</h3>
+        <p> 
+        Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo 
+        ou seção. Normalmente um conteúdo &lt;aside&gt; está posicionado ao lado de um 
+        determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de 
+        texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.  
+        &lt;br&gt; A sua criatividade e planejamento vai definir 
+        a estrutura do seu site. Sendo assim, é possível ter um ou mais 
+        &lt;article&gt; dentro de uma &lt;section&gt; ou até mesmo criar &lt;section&gt;
+        dentro de um &lt;article&gt;. Não existem limitações quanto a isso.&lt;          
+        </p>
+
+        <h3>footer</h3> 
+        <p>
+        Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte 
+        diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um 
+        &lt;aside&gt;), mas possui informações sobre autoria do conteúdo, links adicionais, mapa 
+        do site, documentos relacionados.
+        </p>
+        
+        <h2>Sombras nas caixas</h2>
+
+        <h3>box-shadow</h3>
+        <p>
+        As sombras são muito úteis para dar volume, para dar a sensação de que as caixas 
+        estão ali realmente. A ordem é sempre essa:
+        <br> 1. Deslocamento horizontal (h-offset): quanto a sombra vai andar para o lado 
+        direito (valores negativos causam deslocamento para a esquerda)
+        <br> 2. Deslocamento vertical (v-offset): quanto a sombra vai andar para baixo (valores 
+        negativos causam deslocamento para cima)
+        <br> 3. Embaçamento (blur): quanto a sombra vai se espalhar pelo fundo
+        <br> 4. Cor (color): cor da sombra. É possível usar transparência.
+        </p>
+        <p>
+        <strong>
+            exemplo: box-shadow: 3px 5px 4px [] black;
+            <br> (desejável que a cor da sombra seja escura, black.)
+        </strong>
+        </p>
+
+        <h3>border-radius</h3>
+        <p>
+        Podemos arredondar os vértices usando uma declaração simples usando a 
+        propriedade border-radius. Adicione o seguinte comando ao seletor do artigo do 
+        exemplo que estamos criando: <strong>border: 10pax;</strong>
+        </p>
+        <p>
+        Na declaração acima, todos os vértices foram levemente arredondados (10px) de 
+        forma simétrica. Se for necessário, podemos indicar quatro medidas diferentes, uma 
+        para cada vértice. Olhe atentamente para o resultado abaixo e perceba que cada 
+        ponta está diferente.
+        <br><strong>border-radius: 10px 20px 30px 40px;</strong>
+        </p>
+        <p>
+        Assim como fizemos com as margens, também é possível indicar apenas dois valores, 
+        o que vai agir em vértices intercalados, partindo do canto superior esquerdo.
+        <br><strong>border-radius: 10px 30px;</strong>
+        </p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="primeiro">Seletores personalizados em CSS</h1>
+
+<h2 class="segundo">Personalizando Seletores</h2>
+<p class="parágrafo">
+Ao criar nosso conteúdo em HTML, podemos identificar um determinado elemento único com um <strong>id ( # )</strong>, ou agrupar elementos múltiplos que tenham características semelhantes com um <strong>class ( . )</strong> 
+</p>
+<p class="exemplo">
+<br><strong>Exemplo: no HTML</strong>
+<br> &lt;h1 id='primeiro'&gt;
+<br> &lt;h2 class='segundo'&gt;
+<br> &lt;h2 class='segundo'&gt;
+<br><strong>Exemplo: no CSS</strong>
+<br>#principal {font,background... etc}
+<br>.class {text, color... etc}
+</p>
+<p class="parágrafo">
+<strong>Observação:</strong>  Em um mesmo documento HTML, só podemos usar um id para um único elemento, o que significa que não podemos ter dois elementos com um mesmo id dentro de uma mesma página.
+<br> Porém, podemos atribuir um mesmo class para vários elementos que possuam essa mesma característica.
+<br>Todo id em HTML é identificado nas CSS por 
+um símbolo #. Toda class em HTML é identificada nas CSS por um 
+ponto
+</p>
+
+<h2 class="segundo">Pseudo-class e Pseudo-elements</h2>
+<p class="parágrafo">
+Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento. 
+<br> Existem várias pseudo-classes para estilos, podemos citar <strong>:hover, :visited, :active, :checked, :empty e :focus</strong>.
+</p>
+<p class="parágrafo">
+Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado.
+<br> Os principais pseudo-elementos usados nas CSS são <strong>::before, ::after, ::first-letter, ::first-line</strong>.
+</p>
+<p class="parágrafo">
+Sobre a tag &lt;div&gt; : Serve para alterar o estilo em partes específicas da página e posicionar objetos.
+</p>
+
+<h2 class="segundo">Personalizando Parágrafos</h2>
+<div class="div">
+Passe o mouse por cima
+<p>Surpresa!</p>
+</div>
+<p>Veja o conteúdo oculto aparecendo!</p>
+
+<h2 class="segundo"> Personalizando Links</h2>
+<a href="https://www.linkedin.com" target="_blank" rel="external">Linkedin</a>
+
+
+</body>
+</html>

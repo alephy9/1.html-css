@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            margin: auto;
+            width: 300px;
+        }
+
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            padding: 5px;
+            
+            width: 300px;
+            border-radius: 20px;
+            background-color: #0000003d;
+            color: rgb(0, 0, 0);
+        }
+
+        main {
+            
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(250, 235, 215, 0.308);
+        }
+
+        caption {
+            margin: 50px 0px;
+            padding: 15px;
+            background-color: #0000003d;
+            color: #3b3333;
+            font-size: 20px;
+            border-radius: 15px;
+            font-weight: bolder;
+            
+        }
+
+        tbody > tr, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <h1>Desafio da aula</h1>
+        
+    </header>
+
+    <main>
+        <table>
+
+            <caption>Mesclagem de células</caption>
+
+            <thead>
+                
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    
+                </tr>
+
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+
+        </table>
+    </main>
+</body>
+</html>

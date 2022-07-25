@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 09</title>
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+    <p>
+        Essa tag serve para dar um ponta-pé inicial em criar uma lista de forma ordenada.
+        <br><strong>&lt;ol&gt; &lt;/ol&gt;</strong>
+        <br>Dentro de 'ol' inserimos <strong>&lt;li&gt; &lt;/li&gt;</strong> para criar os tópicos
+        <br>Exemplo: Tag 'ol' padrão.
+        <ol>
+            <li>Francisco</li>
+            <li>Alephy</li>
+            <li>Nascimento</li>
+            <li>Silva</li>
+        </ol>
+    </p>
+    <p>
+Agora saindo do padrão e configurando os tipos de listas ordenadas que existem, 
+<br> Listas: <strong>numéricas, letras maiúsculas e minúsculas, números romanos grandes e pequenos.</strong>
+<br>Pra configurar é simples, basta adicionar 'type=<strong>"digitar a forma"</strong>'
+</p>
+<p>
+    Exemplo: Lista numérica (Padrão)
+    <br><strong>&lt;ol type=1&gt; &lt;/ol&gt;</strong>
+    <ol type="1">
+<li>Francisco</li>
+<li>Alephy</li>
+<li>Nascimento</li>
+<li>Silva</li>
+    </ol>
+</p>
+<p>
+    Exemplo: Letras Maiúsculas
+    <br><strong>&lt;ol type=A&gt; &lt;/ol&gt;</strong>
+    <ol type="A">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+</p>
+<p>
+    Exemplo: Letras minúsculas
+    <br><strong>&lt;ol type=a&gt; &lt;ol&gt;</strong>
+    <ol type="a">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+</p>
+<p>
+    Exemplo: Numéros Romanos Grandes
+    <br><strong>&lt;ol type=I&gt; &lt;ol&gt;</strong>
+    <ol type="I">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+</p>
+<p>
+    Exemplo: Números Romanos Pequenos
+    <br><strong>&lt;ol type=i&gt; &lt;ol&gt;</strong>
+    <ol type="i">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+</p>
+<p>
+    Pra configurar de onde vai começar a lista basta simplesmente adicionar 'start=<strong>"indique sempre de forma numérica"</strong>
+    <br>Exemplo: <strong>&lt;ol type=1 start=5&gt; &lt;/ol&gt;</strong>
+    <ol type="1" start="5">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+    Exemplo: <strong>&lt;ol type=A start=3&gt; &lt;/ol&gt;</strong>
+    <ol type="A" start="3">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ol>
+</p>
+    <h1>Listas NÃO Ordenadas</h1>
+<p>
+    Essa tag serve para dar um ponta-pé inicial em criar uma lista de forma NÃO ordenada.
+    <br> <strong>&lt;ul&gt; &lt;/ul&gt;</strong>
+    <br>Dentro de 'ul' inserimos <strong>&lt;li&gt; &lt;/li&gt;</strong> para criar os tópicos
+    <br>Essa tag <strong>não é necessário</strong> adicionar 'start=' pois não tem ordem!
+</p>
+<p>
+    Exemplo: Tag 'ul' padrão
+    <br> &lt;ul&gt; &lt;/ul&gt;
+    <ul>
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ul>
+</p>
+<p>
+    Podemos configurar a tag da mesma forma adicionando <strong>'type= disc, circle ou square'</strong>
+</p>
+<p>
+    Exemplo: <strong>Tag &lt;ul type=circle&gt; &lt;/ul&gt;</strong>
+    <ul type="circle">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ul>
+</p>
+<p>
+    Exemplo: <strong>Tag &lt;ul type=square&gt; &lt;/ul&gt;</strong>
+    <ul type="square">
+        <li>Francisco</li>
+        <li>Alephy</li>
+        <li>Nascimento</li>
+        <li>Silva</li>
+    </ul>
+</p>
+<h1>Listas Mescladas</h1>
+<p>
+    É possível misturar as listas 'ul e ol' lembrando sempre de colocar 'li' depois que essas tags forem mencionadas,
+    <br>e configurar de acordo com a mesma linha de raciocínio das tag's anteriores.
+</p>
+<p>
+    <strong>Exemplo: 'ol' 'li + (ul+li) + (ol+li)'</strong>
+        <h3>Meus jogos favoritos</h3>
+
+    <ol> <!--Crie sempre uma tag mãe-->
+        <li>Playstation 2</li> <!--Toda vez pra iniciar uma lista use <li>-->
+        <ul type="square"> <!--Defina os tipos de listas como vão ser-->
+            <li>GTA San Andreas</li> <!-- <li> sempre colocando dentro das tag mãe-->
+            <li>Guittar Hero</li>
+            <ol type="a">
+                <li>Brasileiro</li>
+                <li>God Of Guittar</li>
+            </ol>
+            <li>Futebol PES</li>
+            <ol type="a" start="3"> <!--start= sempre numérico independente do type ser letra ou não-->
+                <li>2015</li>
+                <li>2016</li>
+            </ol>
+        </ul>
+   
+     <li>Computador</li>
+        <ul type="square"> <!--Em <ul> não precisa usar start= desnecessário-->
+            <li>Habbo</li>
+            <ol type="a">
+                <li>2012</li>
+            </ol>
+            <li>PointBlank</li>
+            <ol type="a" start="2">
+                <li>2014</li>
+            </ol>
+            <li>League of Legends</li>
+            <ol type="a" start="3">
+                <li>2016</li>
+            </ol>
+        </ul>
+
+
+    </ol>
+</p>
+<h1>Listas Definições</h1>
+<p>
+    É como se fosse um dicionário, pois é uma tag que dar o significado de uma palavra.
+    <br>utilizando a tag: &lt;dt&gt; <strong>Palavra</strong> &lt;/dt&gt; e &lt;dd&gt; <strong>Significado</strong> &lt;dd&gt; <strong>dentro de</strong> &lt;dl&gt; &lt;/dl&gt; <strong>(dl=lista de definição)</strong>
+</p>
+<p>
+    <strong>Exemplo: </strong>
+
+<dl>
+    <dt>HTML5</dt>
+    <dd>Linguagem de hipermarcação de texto</dd>
+
+    <dt>CSS3</dt>
+    <dd>Linguagem design e estilo</dd>
+
+    <dt>Javascript</dt>
+    <dd>Linguagem de programação</dd>
+</dl>
+
+   
+</p>
+</body>
+</html>

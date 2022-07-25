@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 21</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(151, 151, 151, 0.452);
+        }
+
+        header {
+            text-align: center;
+            line-height: 3em;
+            min-width: 300;
+            max-width: 400px;
+            background-color: rgba(255, 235, 205, 0.582);
+            margin: 50px auto;
+            padding: 2em;
+            border: 1px solid rgba(0, 0, 0, 0.212);
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.116);
+        }
+
+        main {
+            
+            min-width: 300px;
+            max-width: 500px;
+            margin: auto;
+            height: 300px;
+        }
+
+        table {
+            background-color: white;
+            margin: auto;  
+            border: 1px solid black;
+            height: 300px;
+            border-collapse: collapse;
+            width: 320px;
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+
+        th, #quantidade {
+            background-color: rgba(119, 119, 119, 0.658);
+            color: white;
+            text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.534);
+        }
+
+        td:hover {
+            background-color: rgba(128, 128, 128, 0.11);
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabelas Grandes!</h1>
+        <p>
+            Use thead (cabeçalho da tabela)
+        </p>
+
+        <p>
+            Use tbody (corpo da tabela)
+        </p>
+
+        <p>
+            Use tfooter (rodapé da tabela)
+        </p>
+    </header>
+
+    <main>
+        <table>
+
+            <thead class="tabela">
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                    <tr>
+                        <td>Fortaleza</td>
+                        <td class="numero">56112</td>
+                    </tr>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="numero">24317</td>
+                    </tr>
+                    <tr>
+                        <td>Recife</td>
+                        <td class="numero">64317</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="numero">6247</td>
+                    </tr>
+                    <tr>
+                        <td>Brasília</td>
+                        <td class="numero">4317</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="numero">7617</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td class="numero">64317</td>
+                    </tr>
+            </tbody>
+
+            <tfooter>
+                <th>Quantidade Total</th>
+                <td class="numero" id="quantidade"><strong>1.094.867</strong></td>
+            </tfooter>
+
+        </table>
+    </main>
+</body>
+</html>

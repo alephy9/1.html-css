@@ -1,0 +1,179 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: #1a5229a6;
+    text-indent: 20px;
+}
+
+main {
+    margin: auto;
+    padding: 1%;
+    min-width: 320px;
+    max-width: 800px;
+}
+
+header {
+    border: 10px;
+    padding: 30px;
+    background-image: linear-gradient(#42C768,#38a858,#32964e,#25743b,#1a5229);
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+header > p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #1a5229;
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+a {
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > a:hover {
+background-color: #298040;
+border-radius: 10px;
+}
+
+nav > a:active {
+    color: rgb(25, 0, 255);
+}
+
+main > article {
+    border-radius: 5px;
+    margin: 0px 5px 5px 5px;
+}
+
+article {
+   background-color: rgba(255, 255, 255, 0.911);
+}
+
+article > h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #006b1b;
+    padding: 20px;
+    margin: 0%;
+    
+}
+
+article > h2 {
+    font-family: sans-serif;
+    text-align: left;
+    background-image: linear-gradient(to right, #c6ffd5,#bbe4c5,#f4fff7);
+    color: #006b1b;
+    padding: 5px;
+    margin: 10px;
+}
+
+article > p {
+    text-align: justify;
+    padding: 30px;
+}
+
+picture {
+    padding: 15px;
+}
+
+img {
+    display:block;
+    width: 100%;
+}
+
+.android {
+    display: block;
+    width: 40%;
+    margin: auto;
+
+}
+
+article > img {
+    padding: 5%;
+}
+
+.youtube {
+    background-color: #006b1b;
+    padding: 10px;
+}
+
+iframe {
+    width: 95%;
+}
+
+aside > h3 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #31ad50;
+    color: white;
+    font-family: sans-serif;
+}
+
+aside > p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px;
+}
+
+ul {
+    margin: 50px;
+    font-size: 18px;
+}
+
+.p {
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.dois {
+    border-radius: 20px;
+    background-color: #90ffaccc;
+    margin: 50px;
+    
+}
+
+.tres {
+    font-size: 17px;
+}
+
+footer {
+    color: white;
+    background-color: #1a5229;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+
+
+

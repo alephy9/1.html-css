@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <p>
+        Significa que você vai disponibilizar caminhos para links aos usuários no site, com links de outros sites já pronto!
+    </p>
+    <p>
+        Exemplo:<strong> Caminhando o usuário a um site externo, saindo do site de origem.</strong>
+        <br> &lt;a href= <strong>"cole link"</strong> &gt; <strong>"Texto ou frase pro usuário clicar"</strong> &lt;/a&gt;
+        <br><a href="https://www.youtube.com/watch?v=CQAT5qdG8tI&ab_channel=ZippyWalk">Clique aqui.</a>
+    </p>
+    <p>
+        Exemplo: <strong>Caminhando o usuário a um site externo, mas sem fechar o site de origem.</strong>
+        <br>&lt;a href="cole link" <strong>target="_blank" rel="external"</strong>&gt; "Texto ou frase" &lt;/a&gt;
+        <br><strong>_blank</strong> significa que o usuário vai abrir link em uma nova guia.
+        <br><strong>rel=external</strong> significa apenas pro mecanismo de pesquisa que é um site externo.
+        <br> <a href="https://www.youtube.com/watch?v=T7YJoGXs2i8&ab_channel=chansonss" target="_blank" rel="external">Clique aqui.</a>
+    </p>
+    <p>
+        Exemplo: <strong>Caminhando o usuário a um site externo, 
+        <br> saindo do site de origem mas dando possibilidade de voltar facilmente na opção do navegador.</strong>
+        <br>&lt;a href='link' <strong>target="_self"</strong> rel="external"
+        <br><strong>_self</strong> significa que o usuário pode voltar ao site clicando na opção de "retornar" do navegador.
+        <br><a href="https://www.youtube.com/watch?v=xFrGuyw1V8s&ab_channel=AbbaVEVO" target="_self" rel="external">Clique aqui.</a>
+    </p>
+    <p>
+        Observação: _blank ou _self, é algo bem opcional que vai de acordo com a facilidade de como vai ficar para o usuário.
+    </p>
+
+    <h1>Links Internos</h1>
+    <p>
+        Significa que você vai disponibilizar o site que você criou com códigos!
+    </p>
+    <p>
+        Exemplo: <strong>Caminhando o usuário a uma segunda e terceira página criada pelo Desenvolvedor.</strong>
+        <br>&lt;a href=<strong>'Ctrl+Espaço'</strong> target="_blank" rel=<strong>"next"</strong>&gt;"Texto.Frase"&lt;/a&gt;
+        <br>&lt;a href=<strong>'Ctrl+Espaço'</strong> target="_blank" rel=<strong>"next"</strong>&gt;"Texto.Frase"&lt;/a&gt;
+        <br>(Ctrl+Espaço) pra encontrar o arquivo feito no pc, é bom que esteja na pasta que está aberta no VScode, fica mais rápido.
+        <br>(rel="next") Como não é um site externo, nós indicamos ao mecanismo de pesquisa que é uma página adiante do site criado.
+        <br><a href="pag02.html" target="_blank" rel="next">Segunda Página</a>
+        <br><a href="pasta3/pag03.html" target="_blank" rel="next">Terceira Página</a>
+    </p>
+
+    <h1>Links Patrocinados</h1>
+    <p>
+        Para links patrocinados, é bem simples.
+        <br>&lt;a href="Link.Site" target="_Blank" rel="nofollow"&gt;"Texto.Frase"&lt;/a&gt;
+        <br>Apenas copiar e colar o link do site
+        <br>(rel="_nofollow") significa que seu site vai apresentar o link patrocinado normalmente, 
+        <br> mas pro mecanismo de pesquisa você não dar aval pra esse link.
+        <br> Exemplo: <a href="https://www.youtube.com/watch?v=0omja1ivpx0&ab_channel=ihowell67" target="_blank" rel="nofollow">Link Patrocinado.</a>
+    </p>
+    
+    <h1>Links Download</h1>
+    <p>
+        Você vai disponibilizar um arquivo no pc, para o usuário baixar através de um link.
+    </p>
+    <p>
+        &lt;a href="Ctrl+Espaço" download="arquivo.formato" type="application/formato"&gt;"Texto.Frase"&lt;/a&gt;
+        <br><strong>href=</strong> procure o arquivo na pasta que está aberta no VScode
+        <br><strong>download=</strong>apenas o nome do arquivo + formato (descarte nome pasta caso tenha)
+        <br><strong>type=</strong> media type para formato do arquivo (iana.org/assigments tem todos media types)
+        <br>Exemplo: <a href="bancocentral.pdf" download="bancocentral.pdf" type="application/pdf">Link Download</a>
+        <br>Exemplo: <a href="pasta3/bancocentral.zip" download="bancocentral.zip" type="application/zip">Link Download</a>
+    </p>
+</body>
+</html>

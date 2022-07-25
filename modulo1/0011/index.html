@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11</title>
+</head>
+<body>
+                <h1>Imagens Dinâmicas</h1>
+
+                <p>
+                Serve para abrir esse site em outros aparelhos, ou diminuir o tamanho do seu navegador.
+                </p>
+                <p>
+                <br>Criar a tag &lt;picture&gt; &lt;/picture&gt;
+                <br>Sempre fazer da foto grande p/ menor
+                <br>dentro dessa tag, criar tag &lt;img src='Ctrl+Espaço' alt='titulo' (colocar imagem grande)
+                <br> acima da tag 'img' criar os &lt;source:media:types&gt;
+                <br>&lt;source media='min-width:digite quantidade pixel' srcset='digite local arquivo' type='image/digite o formato da foto'&gt;
+                <br>trocar media=min por max, afinal é do maior pro menor
+                <br>
+                </p>
+                <picture> 
+                <source media="(max-width:750px)" srcset="imagens/imagem_p.png" type="image/png">
+                <source media="(max-width:1050px)" srcset="imagens/imagem_m.png" type="image/png">
+                <img src="imagens/imagem_g.png" alt="Imagem Grande">
+                </picture>
+                
+                <h1>Colocando Aúdios</h1>
+
+                <p>   
+                Ter bastante atenção com os direitos autorais e nunca usar um arquivo que não tenha licença gratuita em um site que vai ser criado.
+                <br>Existem duas formas de colocar aúdio no site, primeiro de forma específica para um arquivo,
+                <br> segunda e mais recomendada é a forma que vai testar vários formatos e atender mais navegadores.
+                </p> <audio src=""></audio>
+                <p>
+                <audio src="audios/2pac.badguy.mp3" autoplay controls loop></audio>
+                </p>
+                <p>
+                <audio src="audios/quebradas.mp3" autoplay controls loop></audio>
+                </p>
+                <p>
+                <audio preload="metadata" autoplay controls loop>
+
+                <source src="audios/mcpoze.mp3" type="audio/wav">
+                <source src="audios/mcpoze.mp3" type="audio/ogg">
+                <source src="audios/mcpoze.mp3" type="audio/mpeg">
+                <p>Caso não consiga reproduzir o aúdio, faça o download do arquivo. <a href="audios/mcpoze.mp3" target="_blank" download="mcpoze.mp3"> Clique aqui.</a></p> <!--Caso nenhum tipo de arquivo for compativel com o navegador do usuário, irá aparecer mensagem de download-->
+                </audio>
+                </p>
+                
+                <h1>Colocando Vídeos</h1>
+                <p>
+                Existem 2 formas de colocar vídeo no site, a primeira é hospedando o vídeo no próprio servidor e a segunda é colocando um link incorporado de site externo.
+                </p>
+                
+                <h2>Primeiro Exemplo</h2>
+                <!--Essa é a primeira forma de como colocar vídeo-->
+                <video src="videos/video1.mp4" width="350" poster="imagens/brasil.jpg" controls>
+                </video>
+
+                <!--Essa é a forma recomendada de colocar vídeo, pq pode colocar vários formatos-->
+                <video width="350" poster="imagens/brasil.jpg" controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                <source src="videos/video2.webm" type="video/webm">
+
+                <!--Essa é a mensagem que vai aparecer para o usuário, caso navegador dele não seja compatível com nenhum formato-->
+                <p>Infelizmente seu navegador não suporta o formato do arquivo de vídeo, mas você pode ter acesso ao download, <a href="videos/video1.mp4">Clique aqui.
+                </a>
+                </p>
+                </video>
+
+                <h2>Segundo Exemplo</h2>
+                <p>inserindo videos do youtube, apenas copiar incorporar link e colar os códigos, pode também modificar o código tamanho, largura e etc.
+                <br>interessante você ter canal no youtube para subir os vídeos e incorporá-los.
+                </p>
+                
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/IGTJyeSGrzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url('https://cdn-icons-png.flaticon.com/128/1384/1384060.png');
+    background-size: 100px 100px;
+    background-repeat: repeat-x;
+}
+
+#body {
+    height: 98vh;
+    background-image:url('imagens/wallpaper005.jpg');
+    background-repeat: repeat-x;
+    background-size: 300px 300px;
+    background-position: center top;
+}
+
+#tamanho {
+    height: 97vh;
+    /*
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+    Shorthand (size não pega) */
+
+    background: black url(imagens/wallpaper002.jpg) top left no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.um {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#primeiro {
+    background-color: bisque;
+}
+
+#segundo {
+    background-image: linear-gradient(to top, yellow, red);
+}
+
+#terceiro {
+    background-image: url('imagens/pattern001.png');
+}
+
+#quarto {
+    background-image: url('imagens/pattern004.png');
+}
+
+.bloco {
+    border: 1px solid black;
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#a1 {
+    background-image: url('imagens/wallpaper003.jpg');
+    background-size:1080px;
+    background-position: bottom center;
+}
+
+#a2 {
+    background-image: url('imagens/wallpaper003.jpg');
+    background-size:1080px;
+    background-position: right center;
+}
+
+#a3 {
+    background-image: url('imagens/wallpaper003.jpg');
+    background-size:1080px;
+    background-position: left center;
+}
+
+.pag3 {
+    margin: 200px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 5px 30px 5px;
+    line-height: 40px;
+
+}
+

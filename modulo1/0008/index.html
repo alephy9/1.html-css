@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 08</title>
+</head>
+<body>
+    <h1>Formatações de Textos!</h1>
+    <p>
+        Semântica no HTML5 é importante, quer dizer que o <strong>significado</strong> é mais valioso do que a <strong>forma.</strong>
+        <br>Pesquisar sobre as tags obsoletas no w3.org que mostra as que não funcionam mais, por exemplo as que ficam vermelhas no VScode.
+        <br>Focar no significado das palavras, a forma deixa que o CSS3 faz.
+    </p>
+    
+    <h2>Negrito e Itálico</h2>
+    <p>
+        <strong>Essa é a forma certa de deixar as letras em negrito!</strong>
+        <br><strong>Tag: &lt;strong&gt; &lt;/strong&gt;</strong>    
+    </p>
+    <p>
+        <br><em>Essa é a forma certa de deixar as letras em itálico!</em>
+        <br>Tag: <em>&lt;em&gt; &lt;/em&gt;</em>
+    </p>
+<p>
+    Observação: Pra envelopar as mensagens pra inserir códigos rápidos no meio de palavras,
+    <br>Pressione <strong>'Ctrl+Shift+P'</strong> procure <em>'wrap'</em> (wrap with abbreviation),
+    <br>digite a tag que você quer colocar.
+</p>
+
+<h2>Texto Marcado</h2>
+<p>
+    Esse é o método de como marcar um texto de <mark>forma correta.</mark>
+    <br>&lt;mark&gt; &lt;/mark&gt;
+    <br><strong>Observação: Pra mudar a cor do marca texto somente com o CSS3</strong>
+</p>
+
+<h2>Texto grande e pequeno</h2>
+<p>
+    Essa tag de deixar grande está <big>obsoleta.</big>
+    <br>Tag: &lt;big&gt; &lt;/big&gt;
+</p>
+    <p>
+        Essa tag de deixar pequeno está funcionando <small>perfeitamente.</small>
+        <br>Tag: &lt;small&gt; &lt;/small&gt;
+    </p>
+    
+    <h2>Texto deletado e inserido</h2>
+    <p>
+        Essa é o jeito certo de deletar um texto, <del>deixar riscado.</del>
+        <br>Tag: &lt;del&gt; &lt;/del&gt;
+    </p>
+    <p>
+        Esse é o jeito certo de inserir um texto, <ins>deixar sublinhado.</ins>
+        <br>Tag: &lt;ins&gt; &lt;/ins&gt;
+    </p>
+    
+    <h2>Texto sobrescrito e subscrito</h2>
+    <p>
+        Deixando sobrescrito: x<sup>3</sup>+x<sup>2</sup>+10<sup>9</sup>
+        <br>Tag: &lt;sup&gt; &lt;/sup&gt;
+    </p>
+<p>
+    Deixando subscrito: H<sub>2</sub>0 , CO<sub>2</sub> 
+    <br>Tag: &lt;sub&gt; &lt;/sub&gt;
+</p>
+<h2>Código-fonte</h2>
+<p>
+    Serve pra fazer com que palavras sejam mostradas como <code>formato de códigos.</code>
+    <br>Tag: &lt;code&gt; &lt;/code&gt;
+</p>
+<h2>Pre-formatação</h2>
+<p>
+    Serve pra organizar os códigos, mostrar no site da mesma forma como está escrito no VScode.
+    <br>Tag: &lt;pre&gt; &lt;/pre&gt;
+    
+</p>
+<p>
+    <strong>Exemplo:</strong> Código Python
+    <br>
+    <pre>
+        nome = "Nora"
+        linguagem_favorita = "Python"
+        
+        print(f"Olá, eu sou {nome}. Estou aprendendo {linguagem_favorita}.")
+    </pre>
+</p>
+<h2>Citações Simples</h2>
+<p>
+    Isso mostra aspas simples, significa uma <q>citação.</q>
+    <br>Tag: &lt;q&gt; &lt;/q&gt;
+    <br>Observação: sempre que precisar colocar aspas em uma citação simples, coloque o código!
+</p>
+<h2>Citações Completas</h2>
+<p>
+São citações longas, extensas... de autores e etc.
+<br>Tag: &lt;blockquote&gt; &lt;/blockquote&gt; 
+</p>
+<p>
+Caso queira mostrar para o mecanismo de busca do Google de onde você tirou a citação.
+<br>Acrescente 'cite= <strong>"link do site"</strong> '
+<br>Tag: &lt;blockquote cite="link do site"&gt; &lt;/blockquote&gt;
+</p>
+<p>
+    <strong>Exemplo:</strong>
+    <blockquote cite="https://www.pensador.com/autor/albert_einstein/">O ser humano vivencia a si mesmo, seus pensamentos como algo separado do resto do universo – numa espécie de ilusão de ótica de sua consciência. E essa ilusão é uma espécie de prisão que nos restringe a nossos desejos pessoais, conceitos e ao afeto por pessoas mais próximas. Nossa principal tarefa é a de nos livrarmos dessa prisão, ampliando o nosso círculo de compaixão, para que ele abranja todos os seres vivos e toda a natureza em sua beleza. Ninguém conseguirá alcançar completamente esse objetivo, mas lutar pela sua realização já é por si só parte de nossa liberação e o alicerce de nossa segurança interior.</blockquote>
+</p>
+<h2>Abreviações</h2>
+<p>
+    Mostra o significado de uma palavra quando passado o mouse por cima.
+    <br>&lt;abbr title="significado digitalizado"&gt; "envelope aqui o texto para dar o significado" &lt;/abbr&gt;
+    <br>Digite apenas abbr... e der Enter, que aparece tudo.
+</p>
+<p>
+    <strong>Exemplo:</strong>
+    <abbr title="Linguagem de Marcação de Texto">HTML5</abbr>, <abbr title="Linguagem de Estilo Cascata">CSS3</abbr> e <abbr title="Linguagem de Programação.">Javascript.</abbr>
+</p>
+</body>
+</html>

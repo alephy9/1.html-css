@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Fontes!</h1>
+
+<h2>Primeiros passos Tipografia</h2>
+<p>
+inventado por volta dos anos 1.500, a fonte foi criada com intuito de transmitir emoção através da forma das letras 
+<br> com uma certa legibilidade pra cada ocasião.
+</p>
+
+<h2>Anatomia do Tipo</h2>
+<p>
+Cada traço do corpo de uma letra tem um nome, são alguns elementos que usamos como referências como: 
+<br> <strong>(Altura das maiúsculas, ascendente, descendente, altura-x, corpo, arco, barriga, braço, cauda, enlace, espinha, esporão, filete, haste, olho, orelha, pé, perna, serifa, terminal, vértice).</strong>
+<br> na familia tipográfica existem características como: <strong>(light, normal, seminegrito, negrito e extranegrito)</strong>
+</p>
+
+<h2>Categorias de fontes</h2>
+<p>
+Existem 5 características diferentes <strong>(Serifadas, não-Serifadas, Monoespaçadas, Script, Display)</strong>
+</p>
+
+<h2>Familia de fonte no CSS</h2>
+<p>
+Para configurar a família tipográfica que será aplicada a um determinado texto,usamos a propriedade font-family das CSS. <br> Se indicarmos mais de uma família na sequência, estamos indicando ao navegador que dê preferência para a primeira. Caso ela não seja encontrada, tente a próxima. E essa estratégia se seguirá até a última, que geralmente é a família genérica serif, sans-serif ou monospaced.
+<br> <strong>Recomendado sempre usar o 'safe combination' da w3school para verificar a compatibilidade dos dispositivos. (fonte1, fonte2, fonte genérica)</strong>
+<br> (font-familiy: "...")
+</p>
+
+<h2> Tamanho de fontes</h2>
+<p>
+Para especificar tamanho de fontes, existem várias medidas como cm (centímetros), in (polegadas), pt (pontos), pc (paicas), px (pixels), etc.
+<br> <strong>Para tamanhos de fonte a serem exibidos na tela, o W3C recomenda o uso do px ou do em.</strong>
+<br> O tamanho padrão de uma fonte 
+é geralmente <strong>16px</strong>, isso equivale a <strong>1em</strong>.
+<br> A partir daí, podemos configurar o tamanho de um título, por exemplo, como sendo 2 vezes maior que a fonte padrão usando o valor <strong>2em</strong> para a propriedade.
+<br> (font-family:"..." + font-size:"16px")
+</p>
+<p>
+Existem outras formatações muito usadas em CSS, que são as propriedades font-style para aplicar o itálico e font-weight para aplicar o negrito, sem contudo existir o fator semântico.
+<br> O padrão para essas duas propriedades é o valor normal, mas podemos aplicar o valor itálico ao font-style usando italic (mais compatível) ou oblique (menos compatível). Já o negrito, pode ser aplicado por nomes como lighter, bold e bolder ou pelo peso numérico, como indicado na imagem.
+</p>
+
+<h2>Shorthand</h2>
+<p> 
+    É um atalho para simplificar quando precisar configurar uma fonte, no lugar de usar vários parágrafos pra escrever as ferramentas pra modificar a forma da letra, usamos apenas 1 linha. 
+<br> Então pra começar precisa apenas digitalizar. <strong>exemplo &gt; "font: italic bold 16px Arial, Helvetica, sans-serif"</strong>
+</p>
+<p>
+A ordem dos atributos de uma shorthand em CSS é importante.
+<br> No caso da propriedade font, devemos informar, na ordem: <strong>(font-style font-variant font-weight font-size/line height font-family)</strong>
+</p>
+
+<h2>Alinhamentos</h2>
+<p>
+Existem quatro tipos de alinhamento de textos: <strong>text-align (left, right, center, justify)</strong>
+<br> esquerda, direita, centro e 'justify' significa que alinha tanto o lado direito quanto o esquerdo de um texto.
+</p>
+
+<h2>Como descobrir uma fonte que está 
+sendo usada em outro site?</h2>
+<p>
+No chrome webstore baixe a ferramenta 'Fonts Ninja' e use de forma simples. 
+</p>
+
+<h2>Como usar fontes do Google Fonts</h2>
+<p>
+Podemos usar fontes externas em nosso projeto sem a necessidade de baixar e instalar nenhuma fonte no computador do visitante.
+<br> Para isso, usaremos um serviço gratuito chamado Google Fonts, disponível em
+https://fonts.google.com.
+<br> Em primeiro lugar, clique em Embed e em seguida em @import para ter acesso aos 
+códigos que serão colocados no seu arquivo CSS. O código de cima será colocado na 
+primeira linha das suas declarações de estilo. Já o segundo código, especificado em 
+CSS rules será colocado na propriedade font-family na declaração de todo seletor 
+onde vamos querer aplicar a fonte.
+</p>
+
+<h2>Usar fontes externas Baixadas</h2>
+<p>
+    site: dafont.com 
+    <br> @font-face {font-family: ...; src: url(...) format: (...) }
+    <br> tipos de formatos... 'opentype - .otf' 'truetype .ttf' 'embedded-opentype' 'truetype-aat (apple advanced typography)' 'svg'
+</p>
+
+<h2>Como dectetar fontes em imagens</h2>
+<p>
+    Use esses três sites como referências, dando prioridade ao primeiro.
+    <br>Foint finder (what fontis), font squirrel, myfonts.
+</p>
+
+</body>
+</html>

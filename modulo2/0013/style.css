@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+ /* Esse asterísco azul significa configuração global do css */
+/* esse traço e asterísco verde, serve pra deixar mensagem no css */
+
+*
+{
+text-align: center;
+
+}
+
+body
+{
+background-image: linear-gradient(to left, #ffffff3f, #a1ecff, #fd000060);
+}
+
+main
+{
+
+}
+
+h1
+{
+
+}
+
+h2
+{
+ 
+}
+
+h3
+{
+background-color: rgba(255, 255, 255, 0.562);
+}
+
+p
+{
+
+}

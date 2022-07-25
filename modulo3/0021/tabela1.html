@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 21</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        header {
+            text-align: center;
+            line-height: 3em;
+            padding-top: 2rem;
+        }
+
+        main {
+            padding: 50px;
+        }
+
+        table {
+            width: 500px;
+            border: 5px solid rgba(255, 0, 0, 0.575);
+            border-collapse: collapse;
+            margin: auto;
+            
+        }
+
+        tr {
+            background-color: rgba(196, 147, 147, 0.219);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td:hover {
+            background-color: rgba(114, 253, 167, 0.623);
+            color: rgb(255, 0, 0);
+        }
+
+        section > p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabelas HTML5</h1>
+        <p>Use &lt; table &gt; &lt; /table &gt; (Tabela)</p>
+        <p>Use &lt; tr &gt; &lt; /tr &gt; (Linha de tabela)</p>
+        <p>Use &lt; td &gt; &lt; /td &gt; (Dado de tabela)</p>
+        <p>Use &lt; th &gt; &lt; /th &gt; (Define uma célula de cabeçalho em uma tabela)</p>
+    </header>
+   
+    <main>
+        <table>
+            <tr>
+                <td class="linha">A1</td>
+                <td>B1</td>
+                <td>C1</td>
+            </tr>
+
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+            </tr>
+
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td class="linha">C3</td>
+            </tr>
+        </table>
+    </main>
+
+    <section>
+        <p>
+            Pode configurar de acordo com a hierarquia das tags no CSS3.
+        </p>
+    </section>
+
+</body>
+</html>

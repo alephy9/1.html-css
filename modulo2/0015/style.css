@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    background-color: #fffafa6c;
+}
+
+#primeiro {
+    background-color: rgb(255, 134, 134);
+    text-align: center;
+    font-family: serif;
+    margin: 50px;
+    padding: 20px;
+}
+
+.segundo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.082);
+    text-align: center;
+ }
+
+ .exemplo {
+     text-align: center;
+     background-color: rgba(0, 217, 255, 0.11); 
+     border-radius: 100px;
+    }
+
+.parágrafo {
+    text-align: justify;
+}
+
+h3 {
+color: rgb(225, 0, 255);
+text-decoration: none;
+font-family: Arial, sans-serif;
+font-size: 20px;
+}
+
+.div {
+    color:red;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.div > p {
+    display: none;
+}
+
+.div:hover > p {
+
+display: block;
+color: rgb(238, 255, 0);
+background-color: black;
+border-radius: 100px;
+text-align: center;
+font-size: 45px;
+border-style: dashed;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Work Sans' sans-serif;
+}
+
+a:visited {
+    color:rgb(255, 0, 255)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}

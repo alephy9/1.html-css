@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 21</title>
+    <style>
+
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, p {
+            line-height: 2em;
+            text-align: center;
+            margin: auto;
+        }
+
+        .ab {
+            background-color: rgba(172, 172, 172, 0.247);
+            margin: auto;
+            width: 400px;
+            padding: 30px;
+            list-style-position: inside;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alinhamento Vertical</h1>
+
+    <p>Use vertical-align: baseline; <strong>(PADRÃO)</strong></p>
+    <p>Todos elementos &gt; <strong>baseline, length, sub, super, top, text-top, middle, bottom, text-bottom, initial, inheit</strong></p>
+    <p>Também use: <strong>text-align, height, width</strong></p>
+
+    <h1>Tabelas GRANDES</h1>
+    <p>
+        &lt; caption &gt; Legenda da tabela
+        <ul class="ab">
+            <li>&lt; table &gt;</li>
+            <ul>
+                <li>&lt; thead &gt;</li>
+                <ul>
+                    <li>&lt; tr &gt;</li>
+                    <ul type="disc">
+                        <li>&lt; th &gt;</li>
+                        <li>&lt; td &gt;</li>
+                    </ul>
+                </ul>
+                <li>&lt; tbody &gt;</li>
+                <ul>
+                    <li>&lt; tr &gt;</li>
+                    <ul type="disc">
+                        <li>&lt; th &gt;</li>
+                        <li>&lt; td &gt;</li>
+                    </ul>
+                </ul>
+                <li>&lt; tfoot &gt;</li>
+                <ul>
+                    <li>&lt; tr &gt;</li>
+                    <ul type="disc">
+                        <li>&lt; th &gt;</li>
+                        <li>&lt; td &gt;</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </p>
+
+    <h1>Escopo</h1>
+    <p>
+        Ajuda muito ao mecanismo de busca do Google, SEO.
+    </p>
+
+    <p>
+        &lt; th scope= 'col' &gt; [ Define que o cabeçalho pertence a linha vertical de &lt; td &gt; ]
+    </p>
+
+    <p>
+        &lt; th scope= 'row' &gt; [ Define que o cabeçalho pertence a linha horizontal de &lt; td &gt; ]
+    </p>
+
+    <h1>Efeito zebrado</h1>
+    <p>
+        Use uma pseudo-class <strong>' :nth-child(2n) '</strong> [ 2n define cor sim, cor não ]
+        <br><strong>(odd)</strong> define apenas ímpares, <strong>(even)</strong> define apenas pares
+        <br>Sempre use a tag filho " &gt; "
+    </p>
+
+    <p>
+        exemplo: <strong>tbody &gt; tr :nth-child (2n)</strong> { ............................. }
+    </p>
+
+    <h1>Cabeçalho fixo</h1>
+    <p>
+        table <strong>{ position : relative }</strong>
+    </p>
+
+    <p>
+        thead &gt; th &gt; tr 
+        <br> <strong>
+            {  position: sticky;
+            <br> top:0 ou -1px;
+            <br> background-color: "use a mesma cor do cabeçalho" }
+        </strong>
+    </p>
+
+    <p>
+        <strong>( Sempre use )</strong> 
+        <br> [ position: relative ]
+        <br> [ position: sticky ]
+        <br> [ Top: 0 ou -1px ]
+        <br> [ background-color: "cor do cabeçalho"]
+    </p>
+
+    <h1>Mesclagens de células</h1>
+
+    <p>
+        Use colspan= "2" (Ocupa 2 coluna na HORIZONTAL)
+    </p>
+
+    <p>
+        Use rowspan= "3" (Ocupa 3 coluna na VERTICAL)
+    </p>
+
+    <p>
+        <strong>
+            exemplo:
+            <br> &lt; td colspan= "2" &gt;
+            <br> &lt; td rowspan= "3" &gt;
+        </strong> 
+    </p>
+
+</body>
+</html>

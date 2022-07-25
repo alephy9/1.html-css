@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio aula 10</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 550px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        header > h1 {
+            background-color: rgba(52, 147, 231, 0.315);
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        main {
+            margin: auto;
+            width: 800px;
+            padding: 30px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #a5a29f15;
+            width: 800px;
+            
+        }
+
+        caption {
+            background-color: #6e6c69;
+            color: white;
+            padding: 20px 0px;
+            border: 5px solid black;
+            font-size: 25px;
+            font-weight: bolder;    
+        }
+
+        thead {
+            background-color: #6e6c69;
+            color: rgb(255, 255, 255);
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .filme {
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Desafio sobre Tabelas da aula 10!</h1>
+        <p>scope= col ou colgroup</p>
+        <p>scope= row ou rowgrop</p>
+    </header>
+
+    <main>
+
+        <table>
+                
+                <caption>Filmes Favoritos</caption>
+            
+
+            <thead>
+
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+
+            </thead>
+            
+            <tbody>
+
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td class="filme">Alien</td>
+                    <td class="filme">Rambo</td>
+                    <td class="filme">Vingadores</td>
+                </tr>
+
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td class="filme">Hulk</td>
+                    <td class="filme">Inception</td>
+                    <td class="filme">Batman</td>
+                </tr>
+
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td class="filme">Oblivion</td>
+                    <td class="filme">Matrix</td>
+                    <td class="filme">Big Hero</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td class="filme">Intocáveis</td>
+                    <td class="filme">Amnésia</td>
+                    <td class="filme">Gladiador</td>
+                </tr>
+
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td class="filme">Wall-E</td>
+                    <td class="filme">Oldboy</td>
+                    <td class="filme">Dangal</td>
+                </tr>
+                
+                <tr>
+                    <td>Alephy Silva</td>
+                    <td class="filme">Harry Potter</td>
+                    <td class="filme">Senhor dos Anéis</td>
+                    <td class="filme">Interstellar</td>
+                </tr>
+
+
+            </tbody>
+            
+            <tfoot>
+
+            </tfoot>
+
+        </table>
+
+    </main>
+</body>
+</html>

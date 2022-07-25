@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Spline Sans Mono', monospace;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    background-image: linear-gradient(to right, #0bffaeab, #ffffff);
+}
+header {
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    margin: 50px 50px 5px 50px;
+}
+
+header h1 {
+    margin: 35px 0px 25px 0px;
+}
+
+header p {
+    margin: 0px 0px 100px 0px;
+}
+
+article h2 {
+    text-align: center;
+    margin: 0px 0px 25px 0px;
+}
+
+article p {
+    line-height: 40px;
+    text-align: center;
+    text-indent: 15px;
+    margin: 0px 0px 50px 0px;  
+}
+
+article aside {
+    min-width: 150px;
+    max-width: 200px;
+    margin: auto;
+}
+
+article a {
+    display: block;
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px inset #00000011;
+    background-color: rgba(129, 129, 129, 0.082);
+    border-radius: 20px;
+}
+
+article a:hover {
+    text-decoration: underline;
+    color: #0000c5;
+    background-color:#0deea334 ;
+}
