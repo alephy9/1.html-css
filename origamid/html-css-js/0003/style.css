@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container1 {
+    padding-bottom: 4rem;
+}
+
+.header-component {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header-link {
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+.header-link:hover {
+    transition: 0.5s all;
+    background-color: rgb(219, 219, 219);
+}
+
+/* SESSÃO 1 -  SESSÃO 1 -  SESSÃO 1 -  SESSÃO 1 -  SESSÃO 1 -  SESSÃO 1 -  SESSÃO 1 - */
+
+.sessao-1 {
+    margin: 0 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container1-s1 {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.titulo-s1 {
+    font-size: 2rem;
+    background-color: white;
+}
+
+.paragrafo-s1 {
+    font-size: 1.6rem;
+    padding: 2rem 0rem 2rem 2rem;
+}
+
+.link-s1 {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: rgba(255, 0, 0, 0.842);
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.link-s1:hover {
+    transition: 0.5s all;
+    background-color: rgb(207, 24, 24);
+}
+
+.img-s1 {
+    max-width: 625px;
+}
+
+/* SESSÃO 2 -  SESSÃO 2 -  SESSÃO 2 -  SESSÃO 2 -  SESSÃO 2 -  SESSÃO 2 -  SESSÃO 2 - */
+
+.sessao-2 {
+    margin: -5px 20rem 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1263px;
+}
+
+.container1-s2 {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.titulo1-s2 {
+    padding-top: 5rem;
+    padding-right: 2rem;
+    font-size: 6rem;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.192);
+}
+
+.container2-s2 {
+    width: 1235px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.component1-s2 {
+    display: flex;
+    gap: 10px;
+}
+
+.paragrafo-s2 {
+    padding-top: 1rem;
+    width: 60%;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: white;
+}
