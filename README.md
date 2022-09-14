@@ -1,2 +1,2 @@
 # 1.html-css
- Atividades teóricas sobre HTML5 e CSS3
+ Atividades teóricas e práticas sobre HTML5 e CSS3
