@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 800px) {
+
+    header > div {
+        position: static;
+        margin: auto;
+    }
+
+    header > nav {
+        position: static;
+        margin: 3em auto;
+        font-size: 10px;
+        max-width: 300px;
+    }
+
+    .sessao-1, .sessao-2 {
+        position: static;
+        max-width: 290px;
+    }
+
+    .tabela-simples, .tabela-intermediaria {
+        max-width: 300px;
+        border-collapse: collapse;
+
+    }
+
+    .container {
+        overflow-x: auto;
+        max-width: 300px;
+    }
+
+    .container > .tabela-simples > caption {
+        font-size: 1em;
+    }
+
+    .container > .tabela-intermediaria > caption {
+        font-size: 1em;
+    }
+
+}

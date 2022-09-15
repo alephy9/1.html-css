@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media2.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <h1>Sobre</h1>
+            <h2>Tabelas</h2>
+        </div>
+
+        <nav>
+            <a href="../001/index.html" target="_blank" rel="next" title="Praticando HTML Link">Links</a>
+            <a href="https://alephy9.github.io/landing-page-1/" target="_blank" rel="external" title="Praticando HTML Landing Page">Landing Page</a>
+            <a href="../003/index.html" target="_blank" rel="next" title="Praticando HTML Listas">Listas</a>
+        </nav>
+
+   </header>
+
+   <main>
+
+        <section class="sessao-1">
+
+            <div class="container">
+                
+                <table class="tabela-simples">
+
+                    <caption>Tabela Simples</caption>
+                
+                    <thead>
+
+                        <tr>
+
+                            <th class="tabela-simples-cabecalho" scope="col">Letras</th>
+                            <th class="tabela-simples-cabecalho" scope="col">Frutas</th>
+                            <th class="tabela-simples-cabecalho" scope="col">Pessoas</th>
+                            <th class="tabela-simples-cabecalho" scope="col">País</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <th class="tabela-simples-cabecalho" scope="row">A</th>
+                            <td class="tabela-simples-dados">Abacate</td>
+                            <td class="tabela-simples-dados">Alephy</td>
+                            <td class="tabela-simples-dados">Afeganistão</td>
+                        </tr>
+
+                        <tr>
+                            <th class="tabela-simples-cabecalho" scope="row">B</th>
+                            <td class="tabela-simples-dados">Banana</td>
+                            <td class="tabela-simples-dados">Bia</td>
+                            <td class="tabela-simples-dados">Bolívia</td>
+                        </tr>
+
+                        <tr>
+                            <th class="tabela-simples-cabecalho" scope="row">C</th>
+                            <td class="tabela-simples-dados">Cereja</td>
+                            <td class="tabela-simples-dados">Carl</td>
+                            <td class="tabela-simples-dados">Canadá</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                            <th class="tabela-simples-cabecalho" colspan="4">Rodapé da tabela</th>
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="sessao-2">
+
+                <div class="container">
+
+                    <table class="tabela-intermediaria">
+
+                        <caption>Tabela Intermediária</caption>
+
+                        <thead>
+
+                            <tr>
+                                <th class="tabela-intermediaria-cabecalho" scope="col">Gênero</th>
+                                <th class="tabela-intermediaria-cabecalho" scope="col" colspan="2">Filmes</th>
+                                <th class="tabela-intermediaria-cabecalho" scope="col" colspan="2">Séries</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <th class="tabela-intermediaria-cabecalho" scope="row" rowspan="2">Comédia</th>
+                                <td class="tabela-intermediaria-dados" rowspan="2">Os Estagiários</td>
+                                <td class="tabela-intermediaria-dados">O Todo Poderoso</td>
+                                <td class="tabela-intermediaria-dados" rowspan="2">Sillicon Valley</td>
+                                <td class="tabela-intermediaria-dados">Eu, a Patroa e as Crianças</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tabela-intermediaria-dados">Deadpool</td>
+                                <td class="tabela-intermediaria-dados">Um Maluco no Pedaço</td>
+                            </tr>
+
+                            <tr>
+                                <th class="tabela-intermediaria-cabecalho" scope="row" rowspan="2">Drama</th>
+                                <td class="tabela-intermediaria-dados" rowspan="2">Mãos Talentosas</td>
+                                <td class="tabela-intermediaria-dados">O invencível</td>
+                                <td class="tabela-intermediaria-dados" rowspan="2">Peaky Blinders</td>
+                                <td class="tabela-intermediaria-dados">Mr.Robot</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tabela-intermediaria-dados">Um Sonho Impossível</td>
+                                <td class="tabela-intermediaria-dados">Stranger Things</td>
+                            </tr>
+
+                        </tbody>
+
+                        <tfoot>
+
+                            <tr>
+                                <th class="tabela-intermediaria-cabecalho" colspan="5">Apenas o rodapé da Tabela Intermediária</th>
+                            </tr>
+
+                        </tfoot>
+
+                    </table>
+
+                </div>
+            
+        </section>
+
+   </main>
+   
+   <footer>
+
+   </footer> 
+
+</body>
+</html>

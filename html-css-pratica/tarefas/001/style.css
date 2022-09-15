@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: rgb(102, 104, 104);
+    height: 10em;
+}
+
+header div {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 180px;
+    padding-top: 1.5em;
+    margin-left: 1.7em;
+}
+
+header div > h1 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.685);
+}
+
+header div > h2 {
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.534);
+    font-weight: bolder;
+    color: rgb(255, 111, 111);
+}
+
+header ul {
+    margin-top: 1em;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+header li {
+    margin: 0px 20px;
+    background-color: rgba(199, 203, 207, 0.192);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+header li:hover {
+    background-color: rgba(199, 203, 207, 0.562);
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: rgba(252, 147, 87, 0.815);
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    width: 500px;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em;
+    min-width: 250px;
+    max-width: 85%;
+}
+
+section.introducao {
+    line-height: 2em;
+}
+
+section.introducao h2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 5em;
+    margin: auto;
+    border-radius: 8px;
+    
+}
+
+section.introducao p {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.178);
+    margin: 1em 0px 2em 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.introducao p > abbr {
+    text-decoration: none;
+}
+
+section.introducao p > abbr:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.322);
+}
+
+section.introducao ol {
+    list-style-position: inside;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.introducao ol > li > span {
+    color: black;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.144);
+    font-size: small;
+}
+
+section.links {
+    margin-top: 2em;
+}
+
+section.links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    align-items: center;
+}
+
+section.links a:hover {
+    color: white;
+    transition: 0.5s all;
+    text-decoration: underline;
+}
+
+section.links a:active {
+    color: red;
+}
+
+section.links a:visited {
+    color: red;
+}
+
+footer {
+    background-color: rgba(128, 0, 0, 0.199);
+    margin-top: 1em;
+    padding: 1.4em 0px;
+    text-align: center;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('imagens/wallpaper1.jpg');
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+header > div {
+    width: 200px;
+    height: 30px;
+    margin:auto;
+    padding-top: 50vh;
+    position: relative;
+}
+
+header > div > p {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    letter-spacing: 8px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(53, 53, 53);
+    text-shadow: 1px 1px 3px black;
+    opacity: 75%;
+}
+
+
+
+section.um {
+    min-width: 300px;
+    max-width: 100%;
+    margin-bottom: 17em;
+}
+
+section.um > h1 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.137);
+    color: rgb(90, 90, 90);
+    height: 50px;
+}
+
+section.um > p {
+    width: 95%;
+    margin: auto;
+    text-transform: lowercase;
+    background-color: rgb(255, 255, 255);
+    font-size: min(1em, 5vw);
+    padding: 10px 5px;
+    height: 500px;
+}
+
+main > article > section {
+    height: 33.3vh;
+}
+
+section.dois {
+    background-color: rgb(0, 0, 0);
+    background-image: url('imagens/wallpaper2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+section.tres {
+    min-width: 300px;
+    max-width: 100%;
+    background-color: rgb(90, 90, 90);
+    height: 500px;
+}
+
+section.tres > h1 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    background-color: rgb(90, 90, 90);
+    font-size: 25px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.137);
+    color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+section.tres > p {
+    width: 95%;
+    margin: auto;
+    background-color: rgb(90, 90, 90);
+    font-size: min(1em, 5vw);
+    padding: 10px 5px;
+    height: 250px;
+    color: white;
+    text-align: center;
+}

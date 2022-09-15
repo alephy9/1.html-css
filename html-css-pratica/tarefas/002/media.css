@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (max-width:700px) {
+
+    header {
+        height: 3.3em;
+    }
+
+    header > div > h1 {
+        position: absolute;
+        top: 2vh;
+        left: 10vw;
+    }
+
+    header > nav {
+        margin-top: 1em;
+    }
+
+    header > nav > a {
+        font-size: 1em;
+    }
+
+    main > section.lista-serie  {
+        position: inherit;
+        margin: auto;
+    }
+
+    main > section.lista-introducao {
+        position: inherit;
+        margin: 5em auto;
+    }
+}

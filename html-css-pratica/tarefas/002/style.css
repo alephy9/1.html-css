@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: linear-gradient(to right, #330101c4, #000000);
+    background-size: 100% 100%;
+}
+
+header {
+    background-image: linear-gradient(to right, #330101c4, #000000);
+    padding: 2.5em 0px; 
+}
+
+header div {
+    width: 200px;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+header div > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 2px 3px #00000093;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 3.5em;
+    right: 2em;
+}
+
+header nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #00000000;
+}
+
+header nav a:hover {
+    background-color: #5a3d3d;
+    border: 1px solid #0000008f;
+}
+
+header nav a:active {
+    color: #ff0000;
+}
+
+main {
+    margin: 1em auto;
+    padding: 2em 0px;
+    color: #ffffff;
+}
+
+section.lista-serie {
+    width: 250px;
+    position: absolute;
+    top: 12em;
+    left: 10vw;
+}
+
+section.lista-serie > h2 {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+
+section.lista-serie > ol {
+    
+    background-color: #424040;
+    margin-top: 2em;
+    padding: 20px 2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #0000009c;
+    border-radius: 15px;
+}
+
+section.lista-serie > ol > ul {
+    padding: 1em 0em 2em 1.5em;
+    font-size: 14px;
+}
+
+section.lista-serie > ol > ul > li {
+    line-height: 1.7em;
+}
+
+section.lista-introducao {
+    margin: 5em 0px;
+    background-color: #424040;
+    width: 300px;
+    box-shadow: 1px 1px 5px #00000075;
+    border-radius: 15px;
+    position: absolute;
+    top: 17em;
+    right: 10vw;
+}
+
+section.lista-introducao h2 {
+    text-align: center;
+    padding: 1em 0px;
+}
+
+section.lista-introducao > ol {
+    padding: 2em 0em 1em 3em;
+}
+
+section.lista-introducao > ol > li {
+    line-height: 4em;
+    
+}
